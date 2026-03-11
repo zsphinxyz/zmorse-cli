@@ -1,7 +1,16 @@
 [package]
 name = "zmorse"
+description = "morse code converting CLI tool"
 version = "0.1.0"
 edition = "2024"
+authors = ["zsphinx"]
+repository = "https://github.com/zsphinxyz/zmorse-cli"
+
+[package.metadata.wix]
+upgrade-guid = "67E4D83C-C433-4B17-BE2D-66263C5223CD"
+path-guid = "544CF294-A7E2-4D81-82AE-90603E72B84F"
+license = false
+eula = false
 
 [dependencies]
 clap = { version = "4.5.60", features = ["derive"] }
