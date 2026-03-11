@@ -30,23 +30,25 @@ echo "... --- ..." | zmorse -d
 
 ## Installation
 ### Windows
-
+```sh
+powershell -ExecutionPolicy Bypass -c "irm https://github.com/zsphinxyz/zmorse-cli/releases/download/v0.1.1/zmorse-installer.ps1 | iex"
+```
 ### Linux
-
-### MacOS
+```sh
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/zsphinxyz/zmorse-cli/releases/download/v0.1.1/zmorse-installer.sh | sh
+```
+> More download options in [Release](https://github.com/zsphinxyz/zmorse-cli/releases).
 
 ## Development
 ### Requirements
   - Rustup
   - Rustc
   - Cargo
+    - clap
+    - colored
+    - dist
 
-### Crates
-  - clap
-  - colored
-  - dist
-
-### Quick Start
+### Getting Started
   - `git clone https://github.com/zsphinxyz/zmorse-cli`
   - `cd "zmorse-cli"`
   - `cargo run`
