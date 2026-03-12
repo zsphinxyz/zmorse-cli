@@ -29,7 +29,6 @@ fn main() {
             utils::playground();
         }
     } else {
-        // Pip Command
         pipe_handler(args);
     }
 }

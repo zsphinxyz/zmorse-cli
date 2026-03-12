@@ -2,6 +2,12 @@
 
 Morse Code converter CLI tool written in Rust.
 
+[![Release](https://github.com/zsphinxyz/zmorse-cli/actions/workflows/release.yml/badge.svg)](https://github.com/zsphinxyz/zmorse-cli/actions/workflows/release.yml)
+![GitHub Tag](https://img.shields.io/github/v/tag/zsphinxyz/zmorse-cli)
+[![GitHub Downloads](https://img.shields.io/github/downloads/zsphinxyz/zmorse-cli/total)](https://github.com/zsphinxyz/zmorse-cli/releases)
+
+
+
 ## Usage
 ```sh
 zmorse -e "Hello World"
@@ -14,7 +20,7 @@ zmorse -d ".... . .-.. .-.. --- / .-- --- .-. .-.. -.."
 echo "sos" | zmorse
 >> ... --- ...
 
-echo "... --- ..." | zmorse -d
+echo "... --- ..." >> test.txt && cat test.txt | zmorse -d
 >> sos
 ```
 
@@ -46,9 +52,11 @@ curl --proto '=https' --tlsv1.2 -LsSf https://github.com/zsphinxyz/zmorse-cli/re
   - Cargo
     - clap
     - colored
-    - dist
 
 ### Getting Started
-  - `git clone https://github.com/zsphinxyz/zmorse-cli`
-  - `cd "zmorse-cli"`
-  - `cargo run`
+
+```
+git clone https://github.com/zsphinxyz/zmorse-cli
+cd "zmorse-cli"
+cargo run
+```
